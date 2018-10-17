@@ -1,0 +1,162 @@
+
+
+/*  Estilos para barra de Progreso de Habilidades  */
+
+#skill {
+	list-style: none;
+	font: 10px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	width: 45%;
+	margin: 50px auto 0;
+	position: relative;
+	line-height: 2em;
+	padding: 5% 0;
+
+}
+
+#skill li {
+	margin-bottom:50px;
+	background:#e9e5e2;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#e1ddd9), to(#e9e5e2));
+	background-image: -webkit-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: -moz-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: -ms-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: -o-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: linear-gradient(top, #e1ddd9, #e9e5e2);
+	height:20px;
+	border-radius:10px;
+	-moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+	-webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+	box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+}
+
+#skill li h3 {
+	position:relative;
+	top:-25px;
+  font-size: 200.00%;
+  text-align: left;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+}
+
+.bar {
+	height:3%;
+	margin:1px 10px;
+	position:absolute;
+	border-radius:10px;
+	-moz-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+	-webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+	box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+}
+
+.Programacion-Web {
+	width:90%;
+	-moz-animation:Programacion-Web 2s ease-out;
+	-webkit-animation:Programacion-Web 2s ease-out;
+	background-color: #00a8ff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f674a4), to(#e06995));
+	background-image: -webkit-linear-gradient(top, #00a8ff, #e06995);
+	background-image: -moz-linear-gradient(top, #00a8ff, #e06995);
+	background-image: -ms-linear-gradient(top, #00a8ff, #e06995);
+	background-image: -o-linear-gradient(top, #00a8ff, #e06995);
+	background-image: linear-gradient(top, #00a8ff, #e06995);
+}
+
+.Desarrollo-Net{
+	width:85%;
+	-moz-animation:Desarrollo-Net 2s ease-out;
+	-webkit-animation:Desarrollo-Net 2s ease-out;
+	background-color: #EA2027;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f0bb4b), to(#d9aa44));
+	background-image: -webkit-linear-gradient(top, #EA2027, #FFC312);
+	background-image: -moz-linear-gradient(top, #EA2027, #FFC312);
+	background-image: -ms-linear-gradient(top, #EA2027, #FFC312);
+	background-image: -o-linear-gradient(top, #EA2027, #FFC312);
+	background-image: linear-gradient(top, #EA2027, #FFC312);
+}
+
+.Desarrollo-movil{
+	width:80%;
+	-moz-animation:Desarrollo-movil 2s ease-out;
+	-webkit-animation:Desarrollo-movil 2s ease-out;
+	background-color: #0652DD;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#a1ce5b), to(#91ba52));
+	background-image: -webkit-linear-gradient(top, #0652DD, #12CBC4);
+	background-image: -moz-linear-gradient(top, #0652DD, #12CBC4);
+	background-image: -ms-linear-gradient(top, #0652DD, #12CBC4);
+	background-image: -o-linear-gradient(top, #0652DD, #12CBC4);
+	background-image: linear-gradient(top, #0652DD, #12CBC4);
+}
+
+.Seguridad {
+	width:75%;
+	-moz-animation:Seguridad 2s ease-out;
+	-webkit-animation:Seguridad 2s ease-out;
+	background-color: #4cd137;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#66b3cc), to(#5da3ba));
+	background-image: -webkit-linear-gradient(top, #4cd137, #2f3640);
+	background-image: -moz-linear-gradient(top, #4cd137, #2f3640);
+	background-image: -ms-linear-gradient(top, #4cd137, #2f3640);
+	background-image: -o-linear-gradient(top, #4cd137, #2f3640);
+	background-image: linear-gradient(top, #4cd137, #2f3640)
+}
+
+
+.Redes {
+	width:70%;
+	-moz-animation:Redes 2s ease-out;
+	-webkit-animation:Redes 2s ease-out;
+	background-color: #66b3cc;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#66b3cc), to(#5da3ba));
+	background-image: -webkit-linear-gradient(top, #273c75, #5da3ba);
+	background-image: -moz-linear-gradient(top, #273c75, #5da3ba);
+	background-image: -ms-linear-gradient(top, #273c75, #5da3ba);
+	background-image: -o-linear-gradient(top, #273c75, #5da3ba);
+	background-image: linear-gradient(top, #273c75, #5da3ba)
+}
+
+
+.Base-datos {
+	width:65%;
+	-moz-animation:Base-datos 2s ease-out;
+	-webkit-animation:Base-datos 2s ease-out;
+	background-color: #66b3cc;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#66b3cc), to(#5da3ba));
+	background-image: -webkit-linear-gradient(top, #8c7ae6, #9c88ff);
+	background-image: -moz-linear-gradient(top, #8c7ae6, #9c88ff);
+	background-image: -ms-linear-gradient(top, #8c7ae6, #9c88ff);
+	background-image: -o-linear-gradient(top, #8c7ae6, #9c88ff);
+	background-image: linear-gradient(top, #8c7ae6, #9c88ff)
+}
+
+.wordpress {
+	width:60%;
+	-moz-animation:wordpress 2s ease-out;
+	-webkit-animation:wordpress 2s ease-out;
+	background-color: #66b3cc;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#66b3cc), to(#5da3ba));
+	background-image: -webkit-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: -moz-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: -ms-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: -o-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: linear-gradient(top, #66b3cc, #5da3ba)
+}
+
+@-webkit-keyframes Desarrollo-web       { 0%  { width:0px;} 100%{ width:90%;}  }
+@-moz-keyframes Desarrollo-Net {0%  { width:0px;} 100%{ width:85%;}  }
+@-moz-keyframes Desarrollo-movil       { 0%  { width:0px;} 100%{ width:80%;}  }
+@-moz-keyframes Seguridad      { 0%  { width:0px;} 100%{ width:75%;}  }
+@-moz-keyframes Redes   { 0%  { width:0px;} 100%{ width:70%;}  }
+@-moz-keyframes Base-datos      { 0%  { width:0px;} 100%{ width:65%;}  }
+@-moz-keyframes wordpress   { 0%  { width:0px;} 100%{ width:60%;}  }
+
+@-webkit-keyframes Desarrollo-web       { 0%  { width:0px;} 100%{ width:90%;}  }
+@-webkit-keyframes Desarrollo-Net       { 0%  { width:0px;} 100%{ width:85%;}  }
+@-webkit-keyframes Desarrollo-movil        { 0%  { width:0px;} 100%{ width:80%;}  }
+@-webkit-keyframes Seguridad      { 0%  { width:0px;} 100%{ width:75%;}  }
+@-webkit-keyframes Redes   { 0%  { width:0px;} 100%{ width:70%;}  }
+@-webkit-keyframes Base-datos     { 0%  { width:0px;} 100%{ width:65%;}  }
+@-webkit-keyframes wordpress   { 0%  { width:0px;} 100%{ width:60%;} }
