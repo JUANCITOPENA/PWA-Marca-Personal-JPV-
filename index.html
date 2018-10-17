@@ -1,16 +1,17 @@
 <!DOCTYPE HTML>
 <!--Lengauje Manejado-->
-<html lang="es" dir="ltr">
+<html lang="es" dir="ltr" xmlns="http://www.w3.org/1999/html">
   <head>
     <!--Palabras Asentuadas y Caracteres Especiales-->
     <meta charset="utf-8"/>
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Titulo de Pagina Web o Landing Page-->
-    <title>PWA Juancito Peña Web</title>
+    <title>Juancito Peña V.</title>
     <!--Viewport responsivos-->
     <meta name="Viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!--Icono de Mi Web-->
-    <link rel="shortcut icon" type="image/png" href="img/Logo.png" />
-
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <!-- Color de la Aplicacion-->
     <meta name="theme-color" content="#FB314E"/>
     <!-- Optimizacion para Movil -->
@@ -20,36 +21,74 @@
     <!-- Meta etiquetas PWA para Apple -->
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <link rel="apple-touch-icon" href="img/Logo-.png" />
-    <link rel="apple-touch-startup-image" href="img/Logo-.png" />
+    <link rel="apple-touch-icon" href="img/logo1.png" />
+    <link rel="apple-touch-startup-image" href="img/logo1.png" />
 
     <!-- Manifiesto de Configuracion General PWA -->
     <link rel="manifest" href="manifest.json"/>
     <!-- Hojas de Estilo-->
     <link rel="stylesheet" href="css/styles2.css"/>
+    <link rel="stylesheet" href="css/barras.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
     <!-- Libreria jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-    <!-- <script -->
+
+    <!-- <script Pra el Scroll -->
     <script src="main.js"></script>
-    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+
+     <!-- <script Para el Munu Acordeon -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+
+    <!--Para Las Imagenes y Efecto de Portafolio -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://datoweb.com/visor/js/fresco/fresco.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://datoweb.com/visor/css/fresco/fresco.css" />
+
   </head>
   <body>
       <header id="main-header">
-        <div class="container">
-            <div id="logo">
-               <h1>Juancito Peña Web</h1>
-            </div>
-                  <div id="menu">
-                        <ul>
-                          <li><a href="#main-header">Inicio</a></li>
-                          <li><a href="#services">Servicios</a></li>
-                          <li><a href="#SobreMi">Sobre Mi</a></li>
-                          <li><a href="#videos">Videos</a></li>
-                          <li><a href="#footer">Contacto</a></li>
-                        </ul>
-                   </div><!-- Fin del Menu -->
-         </div> <!-- Fin del container -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand mb-0 h1" href="#"> <h1>Juancito Peña</h1></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto ">
+              <li class="nav-item active">
+                <a class="nav-link" href="#main-header">Inicio<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#SobreMi">Sobre Mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Idiomas">Idiomas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Experiencia">Experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Conocimientos">Lenguajes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#videos">Videos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contacto</a>
+              </li>
+            </ul>
+          </div><!-- Fin del container -->
+          </nav>
+
+              <!-- Fin del Menu -->
 
       </header><!-- Fin del Header -->
 
@@ -58,7 +97,7 @@
    <!--Slider -->
     <div id="slider">
        <div class="container">
-           <h2>Desarrollador Web y Profesor</h2>
+           <h2>Desarrollador y Tutor</h2>
        </div>
    </div>
      <!--Inicio de Servicios -->
@@ -69,26 +108,26 @@
               <div class="service">
                 <img src="img/1.png"/>
                   <h3>Desarrollador Web</h3>
-                  <p>Ofresco Servicios de Desarrollo, Diseño y Maquetación de Sitios Web con las mejores tecnologias web de hoy,
-                   Frontend (HTML5, CSS3, Bootstrap, Javascript, PHP, PWA, jQuery) con Framework (Synfony3, Angular, , Ruby, NodeJS)
-                   Backend (MySQL, MongoDB, SQL Server, Oracle, PostgredSQl, Casandra)etc.
+                  <p>Servicios de Desarrollo, Diseño y Maquetación de Sitios Web con las mejores tecnologías de hoy dia,
+                   Frontend (HTML, CSS, Javascript, Bootstrap, PWA, jQuery, Ajax) con Framework de (PHP, POO, MVC, Synfony3, Angular, NodeJS, Laravel)
+                   Backend (MySQL, SQL Server, Oracle, MongoDB, PostgredSQL), creado APIS, y probandolas con Postman, etc.
                   </p>
               </div>
 
                <div class="service">
                  <img src="img/2.png"/>
                    <h3>Desarrollador.Net</h3>
-                   <p>Ofresco Sistemas y Aplicaciones Web de Ventas, Inventarios, Facturacion, bajo las Tecnologias.Net y los Mejores
-                   Gestores de Bases de Datos del mercado, con soporte y garantia garantizada,  Sistemas completos, en modos offline,
-                   onLine, para tu comercio.
+                   <p>Servicios de Desarrollo de Programas, Aplicaciones en C#, VB.Net, ASP.Net, SQL Server, Oracle, Java, Android, para Ventas, Inventarios
+                     , Facturacion, Puntos de Ventas, Sistemas completos, con soporte y mantenimiento garantizado, en modos offline, onLine, para tu comercio.
                    </p>
               </div>
 
                 <div class="service">
                   <img src="img/3.png"/>
                     <h3>Asesorias y Consultorias</h3>
-                    <p>Ofresco Servicios de Consultorias, Asesoramientos de Programacion, Paquetes Sistmeas Ofimaticos Avanzados, Entrenamientos de personal en Sistemas
-                      Operativos Microsoft, Uso de Linux, Plataformas Web, Exel Para Analisistas de Ventas, con Clases Presenciales o Remotas, a todo publico.
+                    <p>Servicios de Consultorias, Asesoramientos Tecnológico, Fcilitador de la Formación Técnica Profesional en Informática,
+                      en Cyberseguridad y Cyberdefensa, en administracion de Servidores, arquitectura y diseño de Redes y Virtualizacion,
+                      Paquetes Ofimaticos, con Curos Presenciales y Semi Presenciales.
                     </p>
                 </div>
         </div><!--Finde Container -->
@@ -102,21 +141,24 @@
        <h2 class="subheader">Sobre Mi <a href="#SobreMi"></a></h2>
 
              <div class="SobreMi">
-               <img src="img/user.png"/>
-              <h3>Ing. En Sistemas y Computacion</h3></br>
-                 <p>Engresado de la Universidad Dominicana O&M, Tecnico Certificdo en Desarrollo Web, Desarrollo.Net, Administrador de Servidores,
-                    Seguridad Informatica , Tecnologias de Redes y Comunicacion, Bases de Datos, CCNA, Con Maestria en Sistemas y Computacion Mension Gerencial.
+               <img src="img/juancito.png" class="mifoto" />
+              <h3>Ingeniero En Sistemas y Computacion</h3><br>
+                 <p><strong>Egresado de la Facultad de Ingenieria de Sistemas de la Universidad Dominicana O&M</strong>, Técnico en <strong>Desarrollo Web,
+                    Desarrollo.Net</strong>, Aadministración  de Servidores, Técnico en Ciberseguridad y Ciberdefensa, Técnico en Redes y Comunicacion CCNA,
+                    Bases de Datos, Actualmente estoy Realizando una <strong>Maestria en Sistemas y Computacion Mension Gerencial</strong>.
                  </p>
 
                  <p>
-                   Vengo de una Familia Humilde pero luchadora, Soy amante de la Tecnología y todo lo bueno que ella representa, desde hace
-                   más de 10 años, comencé a obtener mis primeros conocimientos sobre Informática, y de ahí en adelante no he parado de
-                   aprender. Amo a la tecnología porque  creo que la Educacion y el conocimiento es la única forma de ser verdaderamente libres y autónomos.
+                   Vengo de una <strong>Familia Pobre, pero Humilde y luchadora</strong>, Desde muy joven he sido amante de las Tecnologías y todo lo bueno
+                   que ella representa, desde hace más de 10 años, comencé a obtener mis primeros conocimientos sobre computación, y de ahí en adelante no
+                   he parado de aprender, poniendo en practica cada dia lo aprendido, e innovando siempre, ya que la Tecnologia es cambiante.</p>
+
+                   <p><strong>Amo la Tecnología por todas las cosas Buenas que se pueden crear, y como han cambian el mundo</strong>, en la Medicina, en la
+                   agricultura, en la robotica, en la mecanica, en la electronica, en las protesis, en la ciencia en General, creo en su aporte a <strong>la Educacion
+                   su invovacion en todas las ramas del diario vivir</strong>, y la oportunidad que su uso brinda para que seamos libres, autónomos y creadores de nuestro
+                   futuro, equilibrando la balanza en igualdad de oportunidades, llevando la Educacion donde nunca habia llegado y con ella la esperanza de un mejor
+                   futuro.
                  </p>
-               </br>
-                 <p> <font color="#4b6584">Nunca dejo de aprender. La vida nunca deja de enseñarme. En tiempos de cambios, quienes estén abiertos al aprendizaje,
-                  se adueñaran del futuro. Mientras aquellos que creen saberlo todo estarán bien  equiparado para un mundo que ya no existe!...Eric Hoffer.
-                </font></p>
 
              </div>
            </div>
@@ -124,33 +166,475 @@
 
       <div class="clearfix" ></div>
 
+      <!--Inicio Mis Habilidades-->
+
+   <div id="SobreMi">
+        <div class="container">
+        <h2 class="subheader">Habilidades Tecnológicas <a href="#Habilidades"></a></h2>
+        <div class="Habilidades">
+
+         <ul id="skill">
+          	<li><span class="bar Programacion-Web"></span><h3>Desarrollo.Web</h3></li>
+          	<li><span class="bar Desarrollo-Net"></span><h3>Desarrollo.Net</h3></li>
+            <li><span class="bar Desarrollo-movil"></span><h3>Desarrollo.Movil</h3></li>
+          	<li><span class="bar Seguridad"></span><h3>Ciberseguridad</h3></li>
+          	<li><span class="bar Redes"></span><h3>Redes</h3></li>
+            <li><span class="bar Base-datos"></span><h3>DataBase</h3></li>
+          	<li><span class="bar wordpress"></span><h3>Framework</h3></li>
+          </ul>
+
+           </div>
+      </div>
+    </div>
+
+
+   <!--Fin Mis Habilidades-->
+
+      <div class="clearfix" ></div>
+
+
+    <!--Inicio de Certificados -->
+
+         <div id="Habilidades">
+              <div class="container">
+              <h2 class="subheader">Titulos y Certificados <a href="#Habilidades"></a></h2>
+
+              <div class="slider">
+               <ul>
+                	<li><img src="img/OYM.jpg" width=50% height=80% alt=""></li>
+                  <li><img src="img/CB.jpg" width=50% height=80% alt=""></li>
+                  <li><img src="img/TR.jpg" width=50% height=80% alt=""></li>
+                  <li><img src="img/OYM.jpg" width=50% height=80% alt=""></li>
+               </ul>
+             </div>
+            </div>
+          </div>
+
+
+         <!--Fin Mis Habilidades-->
+
+            <div class="clearfix" ></div>
+
+
+
 
 
       <!--Inicio de Sobre Mi -->
+     <div id="Idiomas">
+       <div class="container">
+         <h2 class="subheader">Idiomas <a href="#Idiomas"></a></h2>
+
+                   <div class="service">
+                     <img src="img/espanol.png"/>
+                       <h3>Español Nativo</a></h3>
+
+                   </div>
+
+                   <div class="service">
+                     <img src="img/Ingles.png"/>
+                       <h3>Technical English</a></h3>
+
+                   </div>
+
+                   <div class="service">
+                     <img src="img/france.png"/>
+                        <h3>Basic French</a></h3>
+                   </div>
+             </div>
+        </div> <!--Finde SobreMi -->
+
+        <div class="clearfix" ></div>
+
+        <!--Inicio de Sobre Mi -->
+       <div id="Experiencia">
+         <div class="container">
+           <h2 class="subheader">Experiencia Laboral <a href="#Experiencia_Laboral"></a></h2>
+
+           <div class="service">
+             <img src="img/CV.png"/>
+               <h4> <a href="http://cerveceriavegana.com.do/ "target="_blank" >Cerveceria Vegana. S.R.L</a></h4>
+               <p><strong>Encargado del Soporte Tecnológico </strong>(Físico y Remoto) a Gerentes, Administradores, Vendedores y personal
+                  de la empresa con el Sistema Integral ERP, dando el soporte con mi equipo a las Aplicaciones, al Software,
+                  al Hardware, a la Comunicación y las Redes (Servidor, Firewall, Proxys, Router, Switch, PC, Hand-Held, Impresoras, etc. )
+                  y Ciberseguridad (Instalación de Antivirus, Parches, Bloqueos de Vulnerabilidades, update, upgrade de Sistemas Operativos, etc).</p>
+                  <p> Contacto Telefonico:  809-530-0202</p>
+
+           </div>
+           <div class="service">
+             <img src="img/SolucionesJPV.png"/>
+                <h4> <a href="https://solucionesjpv.blogspot.com/"target="_blank">Soluciones Tecnologicas</a></h4>
+                 <p><strong>Director General (CEO)</strong>, Plataforma para brindar Servicios Tecnológicos, Cursos, Entrenamientos Corporativos, Consultorias y Asesorías.</p>
+
+                 <p>Administración avanzada de servidores Linux, Microsoft Windows Server, para gestionar sus páginas, Web, sus Bases de Datos,
+                 y Sistemas en General</p>
+
+                 <p>Servicios de Desarrollo de Software, Páginas Web Estáticas, Dinámicas, Responsivas, PWA, Aplicaciones Nativas, Hibridas y Web, Soluciones a la Medida,
+                  para todo tipo de Negocio.</p>
+
+                  <p>Contacto Telefonico: 829-760-0614</p>
+
+           </div>
+           <div class="service">
+             <img src="img/PDC.png"/>
+               <h4> <a href="http://plasticosdelcaribe.com/" target="_blank">Plasticos del Caribe</a></h4>
+               <p>Trabaje como <strong>Soporte Técnico y Asistente del Departamento de Producción</strong>, aportando todos mis conocimientos del proceso de la planta en general,
+                  y Conocimientos de Tecnología, siendo parte de las mejoras al Sistema de Estadísticas, el Sistema de Reportes realizando Back-Order, Picking List,
+                  Packing List, Invoice List, Tablas Dinámicas Pivot, Power Pivot Excel, de formas sistemática y realizando modificación al sistema de registro
+                  de órdenes de producción e inventario de trabajo a corto plazo..Contacto Telefonico: 809-530-0058</p>
+           </div>
+
+      </div><!--Finde Container -->
+      </div> <!--Finde Servicios -->
+      <div class="clearfix" ></div>
+
+    <!--Inicio de Experiencia-->
+      <div id="Conocimientos">
+       <div class="container">
+         <h2 class="subheader">Lenguajes, Framework y DB<a href="#conocimientos"></a></h2>
+
+         <div class="service">
+           <img src="img/Code-icono.png"/>
+
+             <div id="Lengauje"></div>
+             <script>
+              new Morris.Donut({
+                element:'Lengauje',
+                data:[
+                {
+                    label:'HTML5',
+                    value:90
+                },
+                {
+                    label:'CSS',
+                    value:80
+                },
+                {
+                    label:'Javascript',
+                    value:90
+                },
+                {
+                    label:'PHP',
+                    value:75
+                },
+                {
+                    label:'POO',
+                    value:75
+                },
+                {
+                    label:'MVC',
+                    value:70
+                },
+                {
+                    label:'C#',
+                    value:80
+                },
+
+                {
+                    label:'VB.Net',
+                    value:78
+                },
+
+                {
+                    label:'ASPX',
+                    value:75
+                },
+                {
+                    label:'Java',
+                    value:50
+                }
+              ],
+               colors: [
+               '#d35400',
+               '#3742fa',
+               '#fbc531',
+               '#6c5ce7',
+               '#E91E63',
+               '#5f27cd',
+               '#a29bfe',
+               '#0984e3',
+               '#2f3640',
+               '#e84118'
+
+              ],
+               formatter: function(value,data){
+                return  `${value} %`;
+               }
+             });
+             </script>
+
+
+         </div>
+         <div class="service">
+           <img src="img/framework.png"/>
+
+           <div id="Framework"></div>
+           <script>
+            new Morris.Donut({
+              element:'Framework',
+              data:[
+              {
+                  label:'Symfony',
+                  value:82
+              },
+              {
+                  label:'Angular',
+                  value:85
+              },
+              {
+                  label:'Laravel',
+                  value:80
+              },
+              {
+                  label:'Node.JS',
+                  value:75
+              },
+              {
+                  label:'Express',
+                  value:75
+              },
+              {
+                  label:'React.JS',
+                  value:50
+              },
+              {
+                  label:'Microsoft.Net',
+                  value:85
+              },
+              {
+                  label:'Wordpress',
+                  value:70
+              }
+            ],
+             colors: [
+             '#1e272e',
+             '#ff3f34',
+             '#ef5777',
+             '#05c46b',
+             '#808e9b',
+             '#4bcffa',
+             '#1e90ff',
+             '#38ada9'
+            ],
+             formatter: function(value,data){
+              return  `${value} %`;
+             }
+           });
+           </script>
+
+         </div>
+
+         <div class="service">
+           <img src="img/db-code.png"/>
+
+
+           <div id="Base_Datos"></div>
+           <script>
+            new Morris.Donut({
+              element:'Base_Datos',
+              data:[
+              {
+                  label:'MongoDB',
+                  value:80
+              },
+              {
+                  label:'SQL Server',
+                  value:85
+              },
+              {
+                  label:'MySQL',
+                  value:80
+              },
+              {
+                  label:'OracleDB',
+                  value:70
+              },
+              {
+                  label:'PostgredSQL',
+                  value:80
+              },
+              {
+                  label:'Access',
+                  value:95
+              }
+            ],
+             colors: [
+             '#4cd137',
+             '#57606f',
+             '#2980b9',
+             '#c0392b',
+             '#0c2461',
+             '#b33939'
+            ],
+             formatter: function(value,data){
+              return  `${value} %`;
+             }
+           });
+           </script>
+        </div>
+
+
+      </div><!--Finde Container -->
+      </div> <!--Finde Servicios -->
+      <div class="clearfix" ></div>
+
+
+      <!--Inicio de Mi Portafolio -->
      <div id="Portafolio">
+       <center>
        <div class="container">
          <h2 class="subheader">Portafolio <a href="#Portafolio"></a></h2>
 
-         <div class="service">
-           <img src="img/portafolio1.png"/>
-             <h3> <a href="https://rsc-vegana.000webhostapp.com "target="_blank" >Red Social Corporativa</a></h3>
+          <div class="service">
+           <img src="img/social-icon.png"/>
+             <h4> <a href="# "target="_blank" >Red Social Corporativa</a></h4>
              <p>Red Social Proyecto Red social Backend con Symfony 3, PHP y MySQL y el Frontend con HTML5, Bootstrap y jQuery</p>
-         </div>
+             </br>
+             <div class="content">
+                <img id="img-portafolo" src="img/RSC.png" alt="Prueba" width="600">
+            </div>
+      </div>
 
          <div class="service">
-           <img src="img/portafolio1.png"/>
-             <h3> <a href="https://chatcerveceriavegana.herokuapp.com/" target="_blank">Chat Corporativo</a></h3>
+           <img src="img/chat-icon.png"/>
+             <h4> <a href="#" target="_blank">Chat Corporativo</a></h4>
              <p>Chat Javascript Frontend en HTML5, CSS, y Backend con Nodejs, Express, WebSockets y Mongodb.</p>
-         </div>
+           </br>
+             <div class="content">
+                <img id="img-portafolo" src="img/chat.png" alt="Prueba" width="600">
+             </div>
+        </div>
 
          <div class="service">
-           <img src="img/portafolio1.png"/>
-              <h3> <a href="http://cervesa.sytes.net/easyserver/account/frmlogin.aspx"target="_blank">Sistema de Ventas Movil EasySales </a></h3>
-             <p>Sistema de Ventas Movil EasySales PDA, Backend con SQl Server, ASPX.net, C#, Windows Moviles PDA y el Frontend con HTML5, CSS, Bootstrap y jQuery</p>
-         </div>
-   </div><!--Finde Container -->
+           <img src="img/sale-icons.png"/>
+              <h4> <a href="#"target="_blank">Sistema de Ventas </a></h4>
+             <p>Colaborador y analista de Sistema de Ventas Movil EasySales PDA, Backend con SQl Server, ASPX.net, C#, Windows Moviles PDA.</p>
+
+             <div class="content">
+                <img id="img-portafolo" src="img/easysales.png" alt="Prueba" width="600">
+            </div>
+        </div>
+    </div><!--Finde Container -->
 </div> <!--Finde Servicios -->
+
 <div class="clearfix" ></div>
+
+<!--Inicio de Sobre Mi -->
+
+ <div class="container">
+
+   <div class="service">
+     <img src="img/mini-youtube-.png"/>
+       <h4> <a href="#"target="_blank" >Plataforma Web Tipo YouTube </a></h4>
+       <p>Desarrollo de un servicio REST (API REST) con Symfony3 y una Aplicación Web SPA con Angular2 Fullstack, sube videos, crea nanales, reproduce, etc.</p>
+
+       <div class="content">
+          <img id="img-portafolo" src="img/mini-youtube.png" alt="Prueba" width="600">
+      </div>
+   </div>
+
+     <div class="service">
+       <img src="img/hit-play.png"/>
+         <h4> <a href="#" target="_blank">Reproductor Multimedia</a></h4>
+         <p>Desarrollo de un Reproductor Multimedia en C# (Reproduce Imagenes, Audio, Videos, en varios tipo de Formatos, con multiples funcionalidades</p>
+
+         <div class="content">
+            <img id="img-portafolo" src="img/reproductor_multimedia.png" alt="Prueba" width="600">
+        </div>
+       </div>
+
+     <div class="service">
+       <img src="img/atm.png"/>
+          <h4> <a href="#"target="_blank">Cajero Automatico</a></h4>
+         <p>Simulador de Cajero Automatico en VB.Net, Base de Datos Acces, para uso de empresas antiguas que implementan pagos Automatizados a sus empleados.</p>
+         <div class="content">
+            <img id="img-portafolo" src="img/cajero_automatico1.png" alt="Prueba" width="600">
+        </div>
+       </div>
+   </div>
+
+    <div class="clearfix" ></div>
+
+ <div class="container">
+   <div class="service">
+     <img src="img/blog.png"/>
+       <h4> <a href="#"target="_blank" >Sistena Club Nautico</a></h4>
+       <p>Desarrollo de un Sistema de Informacion y manejo de un Club Nautico, en Lenguaje C#, IDE Visual Studio 2015, SQL Server 2014, Crystal Report.
+          Proyecto Asigando en la Universidad, en la Materia de Programacion de Sistemas, donde se pedia realizar un sistema de informacion con Base de
+          Datos Relacional, con un ABM, y Poder ser consultados..
+       </p>
+       <div class="content">
+          <img id="img-portafolo" src="img/club_nautico1.png" alt="Prueba" width="600">
+      </div>
+   </div>
+   <div class="service">
+     <img src="img/ingresos.png"/>
+       <h4> <a href="#" target="_blank">Plataforma de Negocios</a></h4>
+       <p><strong>Sistema Web Para cursos Virtuales Online</strong>, con API de Udemy, y otros portales Web, que brindan servicios de Afiliados, opteniedno
+         porcentages por cada compra, o inscripcion de un curso a traves de Link publicados y alojados en mi Portal y compartido en mis redes sociales,
+         asi como en Blog de Tecnologias y MI Blog de Marca Personal</p>
+       <div class="content">
+          <img id="img-portafolo" src="img/curos-virtuales.png" alt="Prueba" width="600">
+      </div>
+   </div>
+   <div class="service">
+     <img src="img/car.png"/>
+        <h4> <a href="#" target="_blank">Sistema Puntos de Ventas</a></h4>
+       <p>Sistemas para <strong>Puntos de Venta</strong>, con manejo de inventarios y Facturación, en PHP7, HTML5, CSS, Javascript, MySQL, y usando la plantilla
+       AdminLTE. Modulos creacion de Clientes, creacion de Productos, de Categorias, Ventas, Inventarios, Empleados, consultas,
+       Todo Web, y Responsive, etc.</p>
+
+        <br>
+        <div class="content">
+           <img id="img-portafolo" src="img/punto-venta.png" alt="Prueba" width="600">
+           <data-caption="Esta es una imagen de una persona haciendo SURF">
+
+       </div>
+ </div>
+</div>
+</div><!--Finde Container -->
+</div> <!--Finde Servicios -->
+
+</div><!--Finde de Mi Portafolio -->
+<div class="clearfix" ></div>
+
+
+
+<!--Inicio de Sobre Mi -->
+
+ <div class="container">
+
+   <div class="service">
+     <img src="img/pptijera.png"/>
+       <h4> <a href="# " target="_blank" >Juego Piedra, Papel o Tijera </a></h4>
+       <p>Simulador de Juego Piedra, Pepel o Tijera, en C#, SQL Server, donde se simula un juego entre el PC y un Jugador, escogiendo por turno.</p>
+
+       <div class="content">
+          <img id="img-portafolo" src="img/pptijera1.png" alt="Prueba" width="600">
+      </div>
+   </div>
+
+     <div class="service">
+       <img src="img/hit-play.png"/>
+         <h4> <a href="#" target="_blank">Juego Tic, Tac, Toe</a></h4>
+         <p>Desarrollo de un juego simple en HTML, CSS, y Javascript, tambien llamado 3 en Rayas, el juego consiste en hacer un linea seguida</p>
+
+         <div class="content">
+            <img id="img-portafolo" src="img/3rayas.png" alt="Prueba" width="600">
+        </div>
+       </div>
+
+     <div class="service">
+       <img src="img/atm.png"/>
+          <h4> <a href="#" target="_blank">Juego Piedra, Papel o Tijera</a></h4>
+         <p>Simulador de juego simple en HTML, CSS, y Javascript,, donde se simula un juego entre el PC y un Jugador, escogiendo por turno</p>
+         <div class="content">
+            <img id="img-portafolo" src="img/ppt.png" alt="Prueba" width="600">
+        </div>
+       </div>
+   </div>
+
+    <div class="clearfix" ></div>
+
 
 
 
@@ -159,37 +643,36 @@
         <h2 class="subheader">Colaboracion en Linea<a href="#Portafolio"></a></h2>
 
         <div class="service">
-          <img src="img/blogger.png"/>
-            <h3> <a href="https://solucionesjpv.blogspot.com/p/descripcion-del-blog-hola-y-bienvenidos.html "target="_blank" >Blog de Tecnologia</a></h3>
+          <img src="img/blogger-.png"/>
+            <h4> <a href="https://solucionesjpv.blogspot.com/p/descripcion-del-blog-hola-y-bienvenidos.html" target="_blank" >Blog de Tecnologia</a></h4>
             <p>Proyecto para compartir temas Tecnológicos, como la Programación, las Redes, Ciberseguridad y Seguridad Informatica, Robótica,
                Inteligencia Artificial (IA), Internet de las Cosas (loT), Domótica, Computación en la Nube, Electricidad, así como
                los alcances de estas en la Educación Y ciencias, y un apartado de temas de Cultura General y Social. </p>
         </div>
 
         <div class="service">
-          <img src="img/Github.png"/>
-            <h3> <a href="https://github.com/JUANCITOPENA "target="_blank" >Repositorios Compartidos</a></h3>
+          <img src="img/github.png"/>
+            <h4> <a href="https://github.com/JUANCITOPENA " target="_blank" >Repositorios Compartidos</a></h4>
             <p>En este sitio comparto programas y aplicaciones, en publico para que se puedan descargar y modificar, ofreciendo un poco
             de ayuda a muchos estudiantes y personas interesadas en algun programa o logica de programacion, este sitio es muy especial,
             porque tiene un almacenamiento gratis muy bueno y utiliza el sistema de control de versiones. </p>
         </div>
 
-
         <div class="service">
-          <img src="img/youtube.png"/>
-            <h3> <a href="https://www.youtube.com/channel/UCSob-3E5z4IHtMF5B4bN-FA?view_as=subscriber "target="_blank" >MI Canal de Youtube</a></h3>
+          <img src="img/youtube1.png"/>
+            <h4> <a href="https://www.youtube.com/channel/UCSob-3E5z4IHtMF5B4bN-FA?view_as=subscriber " target="_blank" >MI Canal de Youtube</a></h4>
             <p>Canal para Subir y compartir Contenido y videos tutoriales, de muchos temas de interes como Programacion y Desarrollo Web, ,net,
             Seguridad y Ciberseguridad, Redes y Configuracion, Tecnologias innovadoras de vanguardia, Videos motivacionales, y un poco de
             cultura General. Subire videos todas las semanas.</p>
         </div>
-
+      </center>
       </div><!--Finde Container -->
     </div> <!--Finde Servicios -->
     <div class="clearfix" ></div>
 
       <div id="videos">  <!--Inicio de Videos -->
            <div class="container">
-             <h2 class="subheader">Videos Destacados<a href="#inicio"></a></h2>
+             <h2 class="subheader">Algunos Videos de Mi Canal<a href="#main-header"></a></h2>
 
              <!--Primer Video -->
                <div class="videos">
@@ -228,6 +711,46 @@
 
       <!--FIn de Videos  -->
 
+      <!-- Todas las imagenes dentro de la div .content son cargadas en el visor-->
+      <a id="verimagenes" class='fresco' data-fresco-group='grupo'></a>
+
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+    <!--Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon *-->
+      <script src="javascript/scripts.js"></script>
+
+       <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+       </script>
+
+       <script>
+
+            $(document).ready(function(){
+
+            //Al hacer clic en cualquier img ejecutamos la acción
+            $('.content img').click(function() {
+            	//Capturamos el src de la img
+            	var postimg= $(this).attr('src');
+            	//Agregamos el src a una href simbólico
+            	$('#verimagenes').attr('href',postimg);
+            	//Hacemos clic en el enlace para activar el visor
+            	$('#verimagenes').click();
+            });
+
+            });
+       </script>
+
+
+
+
         <!-- Incio del Pie de Pagina o Footer -->
       <div class="clearfix" ></div>
    <!-- Incio del Pie de Pagina o Footer -->
@@ -236,32 +759,36 @@
                 <h2 class="subheader">Contacto <a href="#inicio"></a></h2>
 
                 <!-- Footer Elements -->
-                <footer class="page-footer font-small special-color-dark pt-4"
-
-              </br>
+                <footer class="page-footer font-small special-color-dark pt-4">
+                <br>
                      <!-- Copyright -->
                      <div class="Copyright">
-                     <p id="texto" class="text-muted">| © | 2018 | Copyright | Juancito Peña | Sigueme en Mis Redes Sociales </p>
+                     <p id="texto" class=".text-advertencia">| © - 2018 | Copyright  Juancito Peña - Sigueme en Mis Redes Sociales |</p>
                      <!-- Fin Copyright -->
-                     </br>
-                       <br>
+                     <br>
+                   <br>
                           <!-- Social buttons -->
                         <center>
-                         <a href="https://www.facebook.com/" target="_blank"><img alt="Siguenos en facebook" height="32" src="http://3.bp.blogspot.com/-MQuocq7OzfU/UiXwUY81yQI/AAAAAAAAB0Q/h6-R_R2-buI/s1600/face.png" title="siguenos en facebook" width="32" /></a>
-                         <a href="https://plus.google.com/u/0/+JuancitoPe%C3%B1aVizcainoJPV" target="_blank"><img alt="Siguenos en Google+" height="32" src="http://3.bp.blogspot.com/-fnL839vxuao/UiXnFfyN17I/AAAAAAAABxc/VvcXJlZ65Ko/s1600/Google%252B+alt.png" title="siguenos en Google+" width="32" /></a>
-                         <a href="https://twitter.com/JuancitoPenaV?lang=es" target="_blank"><img alt="Siguenos en Twitter" height="32" src="http://3.bp.blogspot.com/-wlwaJJG-eOY/UiXnHS2jLsI/AAAAAAAAByQ/I2tLyZDLNL4/s1600/Twitter+NEW.png" title="siguenos en Twitter" width="32" /></a>
-                         <a href="https://www.youtube.com/channel/UCSob-3E5z4IHtMF5B4bN-FA?view_as=subscriber" target="_blank"><img alt="Canal de youtube" height="32" src="http://4.bp.blogspot.com/-XWyVHd85Urk/UiXnJChMVWI/AAAAAAAABzI/RHztkyc7gAU/s1600/YouTube+alt+1.png" title="Canal de youtube" width="32" /></a>
-                         <a href="https://www.linkedin.com/in/juancito-p-88613163/" target="_blank"><img alt="Sígueme en Likedin" height="32" src="http://4.bp.blogspot.com/-6fSS1W1pV5U/UiXnKWhitdI/AAAAAAAABzo/iQ_4U_eJ67o/s1600/linkedin_logo_ok.png" title="Sígueme en Likedin" width="32" /></a>
-                         <a href="https://www.instagram.com/juancito.pena.v/" target="_blank"><img alt="Sígueme en Instagram" height="32" src="http://1.bp.blogspot.com/-XzfTlSQVRyU/UiYMDc6J65I/AAAAAAAAB9E/mT46uPMTW6k/s1600/instagram.png" title="sígueme en Instagram" width="32" /></a>
-                         <a href="https://solucionesjpv.blogspot.com/" target="_blank"><img alt="Sígueme en Blogger" height="32" src="http://1.bp.blogspot.com/-_NWymh6-9I4/UiXnEcZ1UMI/AAAAAAAABw4/UkFXkztSeOY/s1600/Google+Blogger.png" title="sígueme en Blogger" width="32" /></a>
-                         <a href="https://juancito.pena@gmail.com" target="_blank"><img alt="Sígueme por Correo" height="32" src="http://2.bp.blogspot.com/-t8bRdqt67iE/UiXnF39QD8I/AAAAAAAABxY/RxGC9wr-GxA/s1600/Mail.png" title="sígueme por Correo" width="32" /></a>
+                         <a href="https://www.facebook.com/" target="_blank"><img alt="Siguenos en facebook" height="32" src="img/facebook.png" title="Siguenos en facebook" width="32" /></a>
+                         <a href="https://plus.google.com/u/0/+JuancitoPe%C3%B1aVizcainoJPV" target="_blank"><img alt="Siguenos en Google+" height="32" src="img/google-plus.png" title="Siguenos en Google+" width="32" /></a>
+                         <a href="https://twitter.com/JuancitoPenaV?lang=es" target="_blank"><img alt="Siguenos en Twitter" height="32" src="img/twitter.png" title="siguenos en Twitter" width="32" /></a>
+                         <a href="https://www.youtube.com/channel/UCSob-3E5z4IHtMF5B4bN-FA?view_as=subscriber" target="_blank"><img alt="Canal de youtube" height="32" src="img/youtube.png" title="Sígueme en Youtube" width="32" /></a>
+                         <a href="https://www.linkedin.com/in/juancito-p-88613163/" target="_blank"><img alt="Sígueme en Likedin" height="32" src="img/linkedin.png" title="Sígueme en Likedin" width="32" /></a>
+                         <a href="https://www.instagram.com/juancito.pena.v/" target="_blank"><img alt="Sígueme en Instagram" height="32" src="img/instagram.png" title="Sígueme en Instagram" width="32" /></a>
+                         <a href="https://solucionesjpv.blogspot.com/" target="_blank"><img alt="Sígueme en Blogger" height="32" src="img/blogger.png" title="Mantente Actualizado en Mi Blog" width="32" /></a>
+                         <a href="https://api.whatsapp.com/send?phone=8097679290text=Agregame a tu Whatsapp, recibe noticias de Tecnologia." target="_blank"><img alt="Sígueme por Correo" height="32" src="img/whatsapp.png" title="Agregame a tu Whatsapp" width="32" /></a>
                        </center>
                         <!-- Fin Footer Elements -->
                     </div>
+
+                  <br>
+                <br>
                  </div>
             </footer>
 
           <div class="clearfix" ></div>
+
+
           <!-- Fin Footer -->
   </body>
 </html>
