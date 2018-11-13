@@ -145,7 +145,7 @@
 	background-image: linear-gradient(top, #66b3cc, #5da3ba)
 }
 
-@-webkit-keyframes Desarrollo-web       { 0%  { width:0px;} 100%{ width:90%;}  }
+@-webkit-keyframes Desarrollo-web       { 0%  { width:0px;} 100%{ width:90%;}  } 
 @-moz-keyframes Desarrollo-Net {0%  { width:0px;} 100%{ width:85%;}  }
 @-moz-keyframes Desarrollo-movil       { 0%  { width:0px;} 100%{ width:80%;}  }
 @-moz-keyframes Seguridad      { 0%  { width:0px;} 100%{ width:75%;}  }
