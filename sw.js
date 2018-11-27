@@ -3,6 +3,8 @@ const CACHE_NAME ='v1_cache_juancito_pena_pwa';
 //Ficheros a Cachear en la Aplicacion
 var urlsToCache =[
   './',
+  '.main.js',
+  '.manifest.json',
   './css/styles.css',
   './javascript/scripts.js',
   './img/fondo1.jpg',
